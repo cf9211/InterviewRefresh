@@ -1,1 +1,9 @@
 
+Q2. How do you separate the actuator endpoints from the main application in Spring Boot?
+A2. You can configure the actuator to run on a different port by setting the management.server.port property in your application.properties or application.yml file. 
+For example:
+application.properties:
+server.port=8080
+management.server.port=8081
+This way, the main application will run on port 8080, and the actuator endpoints will be available on port 8081.
+
